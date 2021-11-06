@@ -1,4 +1,4 @@
-package com.saywut.flutter_foreground_service_plugin;
+package de.link9.flutter_foreground_service_plugin;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.saywut.flutter_foreground_service_plugin;
+package de.link9.flutter_foreground_service_plugin;
 
 import io.flutter.plugin.common.MethodChannel;
 

@@ -27,7 +27,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.saywut.flutter_foreground_service_plugin
+        package: de.link9.flutter_foreground_service_plugin
         pluginClass: FlutterForegroundServicePlugin
 
   # To add assets to your plugin package, add an assets section, like this:
