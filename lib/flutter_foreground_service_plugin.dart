@@ -9,6 +9,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:wakelock/wakelock.dart';
 
 import 'content/notification/notificatioin_content.dart';
 import 'content/notification/notification_priority.dart';
@@ -84,6 +85,7 @@ class FlutterForegroundServicePlugin {
       'isStartOnBoot': isStartOnBoot,
     };
 
+    await Wakelock.enable();
     await _foreground_channel.invokeMethod(_startService, args);
   }
 
@@ -91,6 +93,7 @@ class FlutterForegroundServicePlugin {
   /// If the service isn't running throwing an error
   static Future<void> stopForegroundService() async {
     await _foreground_channel.invokeMethod(_stopService);
+    await Wakelock.disable();
   }
 
   static Future<void> refreshForegroundServiceContent({
