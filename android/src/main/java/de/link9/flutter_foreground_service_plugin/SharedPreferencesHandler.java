@@ -8,7 +8,7 @@ import android.content.SharedPreferences;
  */
 public class SharedPreferencesHandler
 {
-    private static final String SHARED_PREFERENCES_NAME = "com.saywut.flutter_foreground_service_plugin";
+    private static final String SHARED_PREFERENCES_NAME = "de.link9.flutter_foreground_service_plugin";
     private static final int SHARED_PREFERENCES_MOD = Context.MODE_PRIVATE;
 
     private SharedPreferences preferences;

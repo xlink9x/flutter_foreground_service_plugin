@@ -11,7 +11,7 @@ import io.flutter.plugin.common.PluginRegistry;
 
 public class FlutterForegroundServicePlugin implements FlutterPlugin
 {
-  public static final String FOREGROUND_CHANNEL_CHANNEL = "com.saywut.flutter_foreground_service_plugin/foreground_channel";
+  public static final String FOREGROUND_CHANNEL_CHANNEL = "de.link9.flutter_foreground_service_plugin/foreground_channel";
 
   private MethodChannel methodChannel;
 

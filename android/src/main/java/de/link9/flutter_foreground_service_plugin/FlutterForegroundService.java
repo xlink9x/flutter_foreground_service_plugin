@@ -30,7 +30,7 @@ import io.flutter.view.FlutterMain;
 public class FlutterForegroundService extends Service implements MethodChannel.MethodCallHandler
 {
     // flutter background channel
-    private static final String BACKGROUND_CHANNEL_NAME = "com.saywut.flutter_foreground_service_plugin/background_channel";
+    private static final String BACKGROUND_CHANNEL_NAME = "de.link9.flutter_foreground_service_plugin/background_channel";
     private static final String BACKGROUND_CHANNEL_INITIALIZE = "backgroundChannelInitialize";
 
     // service intent action
