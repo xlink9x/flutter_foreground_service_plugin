@@ -19,9 +19,9 @@ import 'content/notification_channel/notification_channel_lockscreen_visibility.
 
 class FlutterForegroundServicePlugin {
   static const String _foregroundChannelName =
-      'com.saywut.flutter_foreground_service_plugin/foreground_channel';
+      'de.link9.flutter_foreground_service_plugin/foreground_channel';
   static const String _backgroundChannelName =
-      'com.saywut.flutter_foreground_service_plugin/background_channel';
+      'de.link9.flutter_foreground_service_plugin/background_channel';
 
   static const MethodChannel _foreground_channel =
       MethodChannel(_foregroundChannelName);
