@@ -216,7 +216,7 @@ public class FlutterForegroundService extends Service implements MethodChannel.M
         engine = new FlutterEngine(this);
         FlutterMain.ensureInitializationComplete(this, null);
 
-        String pluginKey = "com.saywut.flutter_foreground_service_plugin.FlutterForegroundServicePlugin";
+        String pluginKey = "de.link9.flutter_foreground_service_plugin.FlutterForegroundServicePlugin";
         FlutterForegroundServicePlugin.registerWith(new ShimPluginRegistry(engine).registrarFor(pluginKey));
 
         androidToFlutterChannel = new MethodChannel(engine.getDartExecutor(), BACKGROUND_CHANNEL_NAME);
@@ -324,9 +324,10 @@ public class FlutterForegroundService extends Service implements MethodChannel.M
             Intent restartForegroundServiceReceiver = new Intent(this, ForegroundServiceReceiver.class);
             restartForegroundServiceReceiver.setAction(RESTART_FOREGROUND_SERVICE_ACTION);
             sendBroadcast(restartForegroundServiceReceiver);
+        } else {
+            stopPeriodicTask();
         }
 
-        stopPeriodicTask();
     }
 
     @Override
